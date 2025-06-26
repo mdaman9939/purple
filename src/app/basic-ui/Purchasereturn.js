@@ -164,172 +164,183 @@ class Purchasereturn extends React.Component {
                 </div>
 
                 {/* table  item details*/}
-                <table
+                <div
                   style={{
-                    width: '100%',
-                    borderCollapse: 'collapse',
-                    fontSize: '0.8rem',
+                    overflowX: 'auto',
+                    backgroundColor: '#f8f9fa',
+                    padding: '10px',
+                    fontWeight: 'bold',
+                    borderBottom: '1px solid #ddd',
                   }}
                 >
-                  <thead>
-                    <tr>
-                      <th style={tableHeaderStyle}>ItemCode</th>
-                      <th style={tableHeaderStyle}>Item</th>
-                      <th style={tableHeaderStyle}>MRP</th>
-                      <th style={tableHeaderStyle}>Disc %</th>
-                      <th style={tableHeaderStyle}>Disc(Rs.)</th>
-                      <th style={tableHeaderStyle}>GST(%)</th>
-                      <th style={tableHeaderStyle}>GST(Rs)</th>
-                      <th style={tableHeaderStyle}>NetRate</th>
-                      <th style={tableHeaderStyle}>Qty</th>
-                      <th style={tableHeaderStyle}>Total</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="itemCode"
-                          value={itemCode}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '100%',
-                            padding: '0.2rem 0.3rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="item"
-                          value={item}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '120%',
-                            padding: '0.2rem 0.3rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="mrp"
-                          value={mrp}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '120%',
-                            padding: '0.2rem 0.3rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="discPercent"
-                          value={discPercent}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '70%',
-                            padding: '0.1rem 0.2rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="gstRs"
-                          value={gstRs}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '70%',
-                            padding: '0.1rem 0.2rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="gstPercent"
-                          value={gstPercent}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '90%',
-                            padding: '0.1rem 0.2rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="gstRs"
-                          value={gstRs}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '90%',
-                            padding: '0.1rem 0.2rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="netRate"
-                          value={netRate}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '90%',
-                            padding: '0.1rem 0.2rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="qty"
-                          value={qty}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '120%',
-                            padding: '0.2rem 0.3rem',
-                          }}
-                        />
-                      </td>
-                      <td style={tableCellStyle}>
-                        <input
-                          type="text"
-                          name="total"
-                          value={total}
-                          onChange={this.handleInputChange}
-                          style={{
-                            ...formInputStyle,
-                            width: '120%',
-                            padding: '0.2rem 0.3rem',
-                          }}
-                        />
-                      </td>
-                      <button style={{ marginRight: '10px' }}>ADD</button>
-                      <select style={formInputStyle}>
-                        <option>Ex-Tax</option>
-                      </select>
-                    </tr>
-                  </tbody>
-                </table>
+                  Item Details
+                  <table
+                    style={{
+                      width: '100%',
+                      borderCollapse: 'collapse',
+                      fontSize: '0.8rem',
+                    }}
+                  >
+                    <thead>
+                      <tr>
+                        <th style={tableHeaderStyle}>ItemCode</th>
+                        <th style={tableHeaderStyle}>Item</th>
+                        <th style={tableHeaderStyle}>MRP</th>
+                        <th style={tableHeaderStyle}>Disc %</th>
+                        <th style={tableHeaderStyle}>Disc(Rs.)</th>
+                        <th style={tableHeaderStyle}>GST(%)</th>
+                        <th style={tableHeaderStyle}>GST(Rs)</th>
+                        <th style={tableHeaderStyle}>NetRate</th>
+                        <th style={tableHeaderStyle}>Qty</th>
+                        <th style={tableHeaderStyle}>Total</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="itemCode"
+                            value={itemCode}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '100%',
+                              padding: '0.2rem 0.3rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="item"
+                            value={item}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '120%',
+                              padding: '0.2rem 0.3rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="mrp"
+                            value={mrp}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '120%',
+                              padding: '0.2rem 0.3rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="discPercent"
+                            value={discPercent}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '70%',
+                              padding: '0.1rem 0.2rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="gstRs"
+                            value={gstRs}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '70%',
+                              padding: '0.1rem 0.2rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="gstPercent"
+                            value={gstPercent}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '90%',
+                              padding: '0.1rem 0.2rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="gstRs"
+                            value={gstRs}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '90%',
+                              padding: '0.1rem 0.2rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="netRate"
+                            value={netRate}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '90%',
+                              padding: '0.1rem 0.2rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="qty"
+                            value={qty}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '120%',
+                              padding: '0.2rem 0.3rem',
+                            }}
+                          />
+                        </td>
+                        <td style={tableCellStyle}>
+                          <input
+                            type="text"
+                            name="total"
+                            value={total}
+                            onChange={this.handleInputChange}
+                            style={{
+                              ...formInputStyle,
+                              width: '120%',
+                              padding: '0.2rem 0.3rem',
+                            }}
+                          />
+                        </td>
+                        <button style={{ marginRight: '10px' }}>ADD</button>
+                        <select style={formInputStyle}>
+                          <option>Ex-Tax</option>
+                        </select>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
 
               {/* Amount Summary */}
               <div
                 style={{
-                  width: '60%',
+                  width: '30%',
                   marginBottom: '20px',
                   border: '1px solid #e0e0e0',
                   borderRadius: '8px',
@@ -355,7 +366,7 @@ class Purchasereturn extends React.Component {
                       display: 'flex',
                       flexDirection: 'column',
                       gap: '15px',
-                      width: '100%',
+                      width: '30%',
                     }}
                   >
                     <div
@@ -576,7 +587,6 @@ class Purchasereturn extends React.Component {
                         }}
                         readOnly
                       />
-                  
                     </div>
                   </div>
                   <div
